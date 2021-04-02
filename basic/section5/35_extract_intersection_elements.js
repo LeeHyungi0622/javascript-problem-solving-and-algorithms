@@ -35,6 +35,7 @@ function solution(arr1, arr2) {
         if (arr1[p1] === arr2[p2]) {
             answer.push(arr1[p1++]);
             p2++;
+            // 값이 작은 쪽의 index(p1, p2)를 증가시킨다.
         } else if (arr1[p1] < arr2[p2]) p1++;
         else p2++;
     }
